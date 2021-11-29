@@ -90,17 +90,6 @@ a {
       transform: scaleY(4) rotateY(0);
     }
   }
-  
-  @keyframes turn {
-    0% {
-      text-shadow: 0 0 0 #def;
-      transform: scaleY(4) rotateY(90deg);
-    }
-    100% {
-      text-shadow: 0 0 .5rem #def;
-      transform: scaleY(4) rotateY(0);
-    }
-  }
 
 .informationPage img {
     max-width: 1vh;
