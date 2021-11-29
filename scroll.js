@@ -19,7 +19,6 @@ const arrowPageDown = downArrow.addEventListener('click', function(){
 
 window.addEventListener('scroll', function(){ // pullPageScroll 기능
     currentScrollY = window.pageYOffset;
-    downArrow.style.display = "block"; 
 
     if (currentScrollY < portfolioPageScrollY && currentScrollY > innerHeight / 5){
         window.scroll(0, portfolioPageScrollY)
@@ -35,7 +34,6 @@ window.addEventListener('scroll', function(){ // pullPageScroll 기능
         const arrowPageTop = topArrow.addEventListener('click', function(){
             window.scroll(0, introPageScrollY)
             topArrow.style.display = "none";
-            downArrow.style.display = "block"; 
         })
     }
 });

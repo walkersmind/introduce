@@ -18,7 +18,7 @@ a {
 }
 
 .introPage, .portfolioPage, .informationPage {
-    background-image: url("https://i.pinimg.com/originals/2f/99/bf/2f99bfc0ac6d02db55e307d676168af2.gif");
+    background: black;
     color: white;
     height: 100vh;
     overflow: hidden;
@@ -26,6 +26,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolioPage {
+    background-image: url("https://i.pinimg.com/originals/2f/99/bf/2f99bfc0ac6d02db55e307d676168af2.gif");
+    color: white;
 }
 
 .downArrow {
