@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+h1 {
+    margin-bottom: 3vw;
+}
+
+p {
+    margin-top: 0.3vw;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.introPage, .portfolioPage, .informationPage {
+    height: 100vh;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioPage {
+    background-image: url("https://i.pinimg.com/originals/2f/99/bf/2f99bfc0ac6d02db55e307d676168af2.gif");
+    color: white;
+}
+
+.downArrow {
+    display: block;
+    position: absolute;
+    bottom: 4vw;
+    box-sizing: border-box;
+    height: 2vw;
+    width: 2vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1.5px 1.5px 0px;
+    transform: rotate(45deg);
+    animation-name: downArrowAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.informationPage img {
+    max-width: 1vh;
+    margin-right: 0.5vh;
+}
+
+.topArrow {
+    display: none;
+    position: fixed;
+    bottom: 4vw;
+    box-sizing: border-box;
+    height: 2vw;
+    width: 2vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1.5px 1.5px 0px;
+    transform: rotate(225deg);
+    animation-name: topArrowAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes downArrowAnimation {
+    0% {opacity: 1; transform: rotate(45deg) translate(0px)}
+    25% {opacity: 0; transform: rotate(45deg) translate(10px, 10px)}
+    55% {opacity: 0; transform: rotate(45deg) translate(-10px, -10px)}
+    80% {opacity: 1; transform: rotate(45deg) translate(0px)}
+}
+
+  @keyframes topArrowAnimation {
+    0% {opacity: 1; transform: rotate(225deg) translate(0px)}
+    25% {opacity: 0; transform: rotate(225deg) translate(10px, 10px)}
+    55% {opacity: 0; transform: rotate(225deg) translate(-10px, -10px)}
+    80% {opacity: 1; transform: rotate(225deg) translate(0px)}
+}
